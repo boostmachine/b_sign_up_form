@@ -19,14 +19,31 @@ body {
 
 .image {
   display: flex;
+  position: relative;
 }
 
 .image img{
   width: 100%;
   height: 100%;
   object-fit: cover;
+  display: block;
 }
 
+.overlay {
+  position: absolute;
+  flex: 1 2;
+  top: 15%;
+  left: 0;
+  width: 100%;
+  height: 15%;
+  background: rgba(0, 0, 0, 0.5); /* Semi-transparent overlay */
+  color: rgb(255, 255, 255);
+  font-size: clamp(0.2rem, 4vw, 5.5rem);
+  /* Center content in overlay */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 
 .right {
   flex: 1;
